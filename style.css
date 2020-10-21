@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'EB Garamond', serif;
+}
+
+h1 {
+  padding-left: 25px;
+}
+
+.section h2 {
+  text-align: center;
+}
+
+.section p {
+  padding: 16px;
+  text-align: justify;
+}
+
+.section p::first-letter {
+  font-size: 22px;
+}
+
+.gallery img {
+  float: left;
+  width: 19.99999%;
+  height: auto;
+  border: 1px solid #ccc;
+}
+
+.gallery img:hover {
+  transform: scale(1.25, 1.25);
+}
+
+.clearfix:after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+}
