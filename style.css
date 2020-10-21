@@ -41,6 +41,10 @@ h1 {
   clear: both;
 }
 
+.single_image img {
+  margin-left: 35%;
+}
+
 footer {
   position: fixed;
   bottom: 0;
