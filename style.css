@@ -92,6 +92,10 @@ h1 {
   height: 551px;
 }
 
+#holy_ghost_img_3 {
+  float: right;
+}
+
 #passion_img {
   float: left;
   width: 473px;
@@ -102,6 +106,26 @@ h1 {
   float: right;
   width: 512px;
   height: 423px;
+}
+
+#christ_img_2 {
+  float: left;
+}
+
+#john_img {
+  float: left;
+  width: 519px;
+  height: 423;
+}
+
+#oil_vendor_img {
+  float: right;
+  width: 426px;
+  height: 468px;
+}
+
+#john_the_baptist_img {
+  float: left;
 }
 
 footer {
