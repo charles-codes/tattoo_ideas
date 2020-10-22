@@ -122,6 +122,10 @@ h1 {
   height: 423;
 }
 
+#john_img_2 {
+  float: right;
+}
+
 #oil_vendor_img {
   float: right;
   width: 426px;
@@ -153,6 +157,26 @@ h1 {
 }
 
 #cross_img_1 {
+  float: left;
+}
+
+#cross_img_2 {
+  float: left;
+}
+
+#cross_img_3 {
+  float: right;
+}
+
+#cross_img_4 {
+  float: right;
+}
+
+#seven_gifts_img {
+  float: left;
+}
+
+#stigmata_img {
   float: right;
 }
 
