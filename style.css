@@ -63,6 +63,21 @@ h1 {
   margin-left: 35%;
 }
 
+.gregory_img img {
+  width: 300px;
+  height: 400px;
+  margin-left: 35%;
+}
+
+.holy_ghost_gallery img {
+  float: left;
+  width: 24.99999%;
+  height: auto;
+  border: 1px solid #ccc;
+  margin-left: 150px;
+  margin-right: 50px;
+}
+
 footer {
   position: relative;
   bottom: 0;
