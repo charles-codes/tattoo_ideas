@@ -152,6 +152,10 @@ h1 {
   float: left;
 }
 
+#cross_img_1 {
+  float: right;
+}
+
 footer {
   position: relative;
   bottom: 0;
