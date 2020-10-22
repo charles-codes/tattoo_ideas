@@ -74,8 +74,12 @@ h1 {
   height: 285px;
 }
 
-#greg_img {
+#greg_I_img {
   float: right;
+}
+
+#greg_img {
+  float: left;
   width: 420px;
   height: 501px;
 }
@@ -125,6 +129,26 @@ h1 {
 }
 
 #john_the_baptist_img {
+  float: left;
+}
+
+#john_the_baptist_img_2 {
+  float: right;
+}
+
+#lamb_img {
+  float: left;
+}
+
+#mary_img_1 {
+  float: left;
+}
+
+#mary_img_2 {
+  float: right;
+}
+
+#mary_img_3 {
   float: left;
 }
 
