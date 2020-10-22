@@ -17,7 +17,7 @@ header {
 
 header p {
   padding-left: 55px;
-  font-size: 28px;
+  font-size: 32px;
   width: 500px;
   text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
   text-align: center;
@@ -25,32 +25,41 @@ header p {
 
 h1 {
   padding-left: 100px;
-  font-size: 60px;
+  font-size: 64px;
   text-shadow: -1px 0 darkgrey, 0 1px darkgrey, 1px 0 darkgrey, 0 -1px darkgrey;
+}
+
+.section {
+  margin: 20px;
 }
 
 .section h2 {
   text-align: center;
+  font-size: 32px;
+  text-shadow: -1px 0 darkgrey, 0 1px darkgrey, 1px 0 darkgrey, 0 -1px darkgrey;
 }
 
 .section p {
   padding: 16px;
+
   text-align: justify;
+  font-size: 24px;
 }
 
 .section p::first-letter {
-  font-size: 22px;
+  font-size: 32px;
 }
 
-.gallery img {
+#denis_img_1 {
   float: left;
-  width: 19.99999%;
-  height: auto;
-  border: 1px solid #ccc;
+  width: 393px;
+  height: 346px;
 }
 
-.gallery img:hover {
-  transform: scale(1.25, 1.25);
+#denis_img_2 {
+  float: right;
+  width: 200px;
+  height: 333.33333px;
 }
 
 .clearfix:after {
@@ -59,23 +68,28 @@ h1 {
   clear: both;
 }
 
-.single_image img {
-  margin-left: 35%;
-}
-
-.gregory_img img {
-  width: 300px;
-  height: 400px;
-  margin-left: 35%;
-}
-
-.holy_ghost_gallery img {
+#crane_img {
   float: left;
-  width: 24.99999%;
-  height: auto;
-  border: 1px solid #ccc;
-  margin-left: 150px;
-  margin-right: 50px;
+  width: 232.5px;
+  height: 285px;
+}
+
+#greg_img {
+  float: right;
+  width: 420px;
+  height: 501px;
+}
+
+#holy_ghost_img_1 {
+  float: left;
+  width: 503px;
+  height: 548px;
+}
+
+#holy_ghost_img_2 {
+  float: right;
+  width: 236px;
+  height: 551px;
 }
 
 footer {
