@@ -5,6 +5,11 @@
 
 body {
   font-family: 'EB Garamond', serif;
+  background-color: #ece9e9;
+}
+
+#header_homepage {
+  height: 450px;
 }
 
 header {
@@ -29,6 +34,39 @@ h1 {
   text-shadow: -1px 0 darkgrey, 0 1px darkgrey, 1px 0 darkgrey, 0 -1px darkgrey;
 }
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  top: 0;
+}
+
+li {
+  float: left;
+  border-right: 1px solid gray;
+}
+
+li:last-child {
+  border-right: none;
+  border-left: 1px solid gray;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  text-shadow: -.5px 0 darkgrey, 0 .5px darkgrey, .5px 0 darkgrey, 0 -.5px darkgrey;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
 .section {
   margin: 20px;
 }
@@ -40,14 +78,24 @@ h1 {
 }
 
 .section p {
-  padding: 16px;
-
   text-align: justify;
   font-size: 24px;
 }
 
 .section p::first-letter {
   font-size: 32px;
+}
+
+.section img {
+  border: #8F8F8F solid 3px;
+  margin: 16px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px #696969;
+}
+
+.section a {
+  text-decoration: none;
+  color: rgb(177, 33, 33);
 }
 
 #denis_img_1 {
@@ -184,10 +232,15 @@ footer {
   position: relative;
   bottom: 0;
   border-top: solid 2px black;
-  background-color: rgb(221, 219, 219);
+  background-image: url("images/st_peters_illustration.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 footer p {
-  text-align: center;
+  text-align: left;
   color: black;
+  text-shadow: -1px 0 #ece9e9, 0 1px #ece9e9, 1px 0 #ece9e9, 0 -1px #ece9e9;
+  padding: 5px;
+  font-size: 20px;
 }
