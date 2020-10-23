@@ -248,3 +248,21 @@ footer p {
   padding: 5px;
   font-size: 20px;
 }
+
+/* css for gallery.html which will use flexbox */
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-between;
+  align-items: center;
+}
+
+.container img {
+  border: #8F8F8F solid 3px;
+  margin: 8px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px #696969;
+}
