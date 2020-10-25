@@ -232,6 +232,60 @@ li a:hover {
   float: right;
 }
 
+#saint_lucia_img {
+  float: left;
+  width: 400px;
+  height: 400px;
+}
+
+#sebastian_img_1 {
+  float: left;
+  width: 261.33333px;
+  height: 337.33333px;
+}
+
+#sebastian_img_2 {
+  float: right;
+  width: 219.66666px;
+  height: 335.33333px;
+}
+
+#sebastian_img_3 {
+  float: right;
+  width: 152.66666px;
+  height: 221.66666px;
+}
+
+#teresa_img_1 {
+  float: left;
+  width: 318.5px;
+  height: 403px;
+}
+
+#teresa_img_2 {
+  float: right;
+  width: 333px;
+  height: 441.5px;
+}
+
+#magdalene_img_2 {
+  float: right;
+  width: 253px;
+  height: 365px;
+}
+
+#veil_img_1 {
+  float: left;
+  width: 407px;
+  height: 603px;
+}
+
+#veil_img_2 {
+  float: right;
+  width: 386px;
+  height: 550px;
+}
+
 footer {
   position: relative;
   bottom: 0;
