@@ -41,7 +41,14 @@
     <h1 class="h1_page">ANIMALS</h1>
 
     <div class="section">
-      <img id="crane_img" src="images/crane.png" alt="Crane holding a stone">
+      <img id="crane_img" class="modal_hover_effect" src="images/crane.png" alt="Crane holding a stone">
+
+      <div id="crane_modal" class="modal">
+        <span id="crane_close" class="close">&times;</span>
+        <img id="crane_modal_img" class="modal_content">
+        <div id="crane_caption" class="caption"></div>
+      </div>
+
       <h2>Crane of Classical Heraldry</h2>
       <p>As a symbol of heraldry the sole crane holding a stone was used to symbolize vigilance. Legend said that cranes lived along the banks of the Nile river and were preyed upon by Pygmees. To protect themselves at night, flocks of crane would charge one bird to watch duty, and that trusted bird would hold a stone in its claws so if the bird were to neglect their duties and fall asleep, it would drop the stone, thus awakening the other birds.</p>
     </div>
@@ -50,7 +57,14 @@
     <hr>
 
     <div class="section">
-      <img id="lamb_img" src="images/divine_lamb.png" alt="Divine Lamb">
+      <img id="lamb_img" class="modal_hover_effect" src="images/divine_lamb.png" alt="Divine Lamb">
+
+      <div id="lamb_modal" class="modal">
+        <span id="lamb_close" class="close">&times;</span>
+        <img id="lamb_modal_img" class="modal_content">
+        <div id="lamb_caption" class="caption"></div>
+      </div>
+
       <h2>The Lamb of God</h2>
       <p>Christ is often depicted as a lamb as inspired by scripture. Here the Lambo of God is depicted with a cruciform nimbus and carrying a cross-bearing scepter.</p>
     </div>
@@ -61,6 +75,7 @@
       <p>@charles_codes || &#169</p>
     </footer>
 
+    <!-- js logic for setting active class -->
     <script type="text/javascript">
       var menu = document.querySelectorAll('.menu li a');
       for (var i = menu.length - 1; i >= 0; i--) {
@@ -69,5 +84,56 @@
         }
       };
     </script>
+
+    <!-- js logic for creating image modal -->
+    <script type="text/javascript">
+      // grab the modal
+      var modal = document.getElementById("crane_modal");
+
+      // get the image and insert it into the modal - use its alt text as caption
+      var img = document.getElementById("crane_img");
+      var modalImg = document.getElementById("crane_modal_img");
+      var captionText = document.getElementById("crane_caption");
+
+      img.onclick = function() {
+        modal.style.display = "block";
+        modalImg.style.margin = "auto";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      }
+
+      // get the span element that closes the modal
+      var span = document.getElementById("crane_close");
+
+      //when the user clicks on span x close the modal
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+    </script>
+
+<script type="text/javascript">
+  // grab the modal
+  var modal = document.getElementById("lamb_modal");
+
+  // get the image and insert it into the modal - use its alt text as caption
+  var img = document.getElementById("lamb_img");
+  var modalImg = document.getElementById("lamb_modal_img");
+  var captionText = document.getElementById("lamb_caption");
+
+  img.onclick = function() {
+    modal.style.display = "block";
+    modalImg.style.margin = "auto";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
+
+  // get the span element that closes the modal
+  var span = document.getElementById("lamb_close");
+
+  //when the user clicks on span x close the modal
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+</script>
   </body>
 </html>
