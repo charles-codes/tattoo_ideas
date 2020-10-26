@@ -41,7 +41,14 @@
     <h1 class="h1_page">OTHER IMAGERY</h1>
 
     <div class="section">
-      <img id="stigmata_img" src="images/stigmata.png" alt="Signs of the Stigmata">
+      <img id="stigmata_img" class="modal_hover_effect" src="images/stigmata.png" alt="Signs of the Stigmata">
+
+      <div id="stigmata_modal" class="modal">
+        <span id="stigmata_close" class="close">&times;</span>
+        <img id="stigmata_modal_img" class="modal_content">
+        <div id="stigmata_caption" class="caption"></div>
+      </div>
+
       <h2>Signs of Stigmata</h2>
       <p>The signs of stigmata are depictions of Christ's wounds on the cross. The five wounds include the piercing of each hand, each foot, and Christ's side.</p>
     </div>
@@ -50,7 +57,14 @@
     <hr>
 
     <div class="section">
-      <img id="oil_vendor_img" src="images/oil_vendor_tomb.png" alt="Tomb of a Vendor of Oil">
+      <img id="oil_vendor_img" class="modal_hover_effect" src="images/oil_vendor_tomb.png" alt="Tomb of a Vendor of Oil">
+
+      <div id="tomb_modal" class="modal">
+        <span id="tomb_close" class="close">&times;</span>
+        <img id="tomb_modal_img" class="modal_content">
+        <div id="tomb_caption" class="caption"></div>
+      </div>
+
       <h2>Tomb of a Vendor of Oil</h2>
       <p>The tomb of a vendor of oil with various images depicting an embalmed body descending into the tomb, a small house, a candlestick structure fitted with oil-buring funeral lamps, and a scale.</p>
     </div>
@@ -59,8 +73,21 @@
     <hr>
 
     <div class="section">
-      <img id="veil_img_1" src="images/veil_of_veronica.jpg" alt="Veil of Veronica">
-      <img id="veil_img_2" src="images/veil_of_veronica_2.jpeg" alt="Veil of Veronica">
+      <img id="veil_img_1" class="modal_hover_effect" src="images/veil_of_veronica.jpg" alt="Veil of Veronica">
+
+      <div id="veil_1_modal" class="modal">
+        <span id="veil_1_close" class="close">&times;</span>
+        <img id="veil_1_modal_img" class="modal_content">
+        <div id="veil_1_caption" class="caption"></div>
+      </div>
+
+      <img id="veil_img_2" class="modal_hover_effect" src="images/veil_of_veronica_2.jpeg" alt="Veil of Veronica">
+
+      <div id="veil_2_modal" class="modal">
+        <span id="veil_2_close" class="close">&times;</span>
+        <img id="veil_2_modal_img" class="modal_content">
+        <div id="veil_2_caption" class="caption"></div>
+      </div>
       <h2>Veil of Veronica</h2>
       <p>Although not mentioned in the scriptures, the Veil of Veronica refers to a matron of Jerusalem who accompanied Christ on the road to Calvary. The story tells of her offering Christ a towel and on which he left an imprint of his own face, with which she eventually brought to Rome to be venerated as a relic of Christ. </p>
     </div>
@@ -78,6 +105,106 @@
           menu[i].setAttribute("class", "active");
         }
       };
+    </script>
+
+    <script type="text/javascript">
+      // grab the modal
+      var modal = document.getElementById("stigmata_modal");
+
+      // get the image and insert it into the modal - use its alt text as caption
+      var img = document.getElementById("stigmata_img");
+      var modalImg = document.getElementById("stigmata_modal_img");
+      var captionText = document.getElementById("stigmata_caption");
+
+      img.onclick = function() {
+        modal.style.display = "block";
+        modalImg.style.margin = "auto";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      }
+
+      // get the span element that closes the modal
+      var span = document.getElementById("stigmata_close");
+
+      //when the user clicks on span x close the modal
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+    </script>
+
+    <script type="text/javascript">
+      // grab the modal
+      var modal = document.getElementById("tomb_modal");
+
+      // get the image and insert it into the modal - use its alt text as caption
+      var img = document.getElementById("oil_vendor_img");
+      var modalImg = document.getElementById("tomb_modal_img");
+      var captionText = document.getElementById("tomb_caption");
+
+      img.onclick = function() {
+        modal.style.display = "block";
+        modalImg.style.margin = "auto";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      }
+
+      // get the span element that closes the modal
+      var span = document.getElementById("tomb_close");
+
+      //when the user clicks on span x close the modal
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+    </script>
+
+    <script type="text/javascript">
+      // grab the modal
+      var modal = document.getElementById("veil_1_modal");
+
+      // get the image and insert it into the modal - use its alt text as caption
+      var img = document.getElementById("veil_img_1");
+      var modalImg = document.getElementById("veil_1_modal_img");
+      var captionText = document.getElementById("veil_1_caption");
+
+      img.onclick = function() {
+        modal.style.display = "block";
+        modalImg.style.margin = "auto";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      }
+
+      // get the span element that closes the modal
+      var span = document.getElementById("veil_1_close");
+
+      //when the user clicks on span x close the modal
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+    </script>
+
+    <script type="text/javascript">
+      // grab the modal
+      var modal = document.getElementById("veil_2_modal");
+
+      // get the image and insert it into the modal - use its alt text as caption
+      var img = document.getElementById("veil_img_2");
+      var modalImg = document.getElementById("veil_2_modal_img");
+      var captionText = document.getElementById("veil_2_caption");
+
+      img.onclick = function() {
+        modal.style.display = "block";
+        modalImg.style.margin = "auto";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      }
+
+      // get the span element that closes the modal
+      var span = document.getElementById("veil_2_close");
+
+      //when the user clicks on span x close the modal
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
     </script>
   </body>
 </html>

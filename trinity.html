@@ -41,7 +41,14 @@
     <h1 class="h1_page">THE HOLY TRINITY</h1>
 
     <div class="section">
-      <img id="seven_gifts_img" src="images/seven_gifts.png" alt="Doves as the Seven Gifts of the Holy Spirit">
+      <img id="seven_gifts_img" class="modal_hover_effect" src="images/seven_gifts.png" alt="Doves as the Seven Gifts of the Holy Spirit">
+
+      <div id="seven_gifts_modal" class="modal">
+        <span id="seven_gifts_close" class="close">&times;</span>
+        <img id="seven_gifts_modal_img" class="modal_content">
+        <div id="seven_gifts_caption" class="caption"></div>
+      </div>
+
       <h2>The Seven Gifts of the Holy Spirit</h2>
       <p>The dove is a common representation of the seven gifts of the Holy Spirit. The seven gifts are:</p>
       <p>Wisdom</p>
@@ -57,14 +64,35 @@
     <hr>
 
     <div class="section">
-      <img id="holy_ghost_img_1" src="images/holy_ghost_as_child.png" alt="The Holy Ghost as Child">
-      <img id="holy_ghost_img_2" src="images/holy_ghost_standard.png" alt="The Holy Ghost as Dove on a standard">
+      <img id="holy_ghost_img_1" class="modal_hover_effect" src="images/holy_ghost_as_child.png" alt="The Holy Ghost as Child">
+
+      <div id="holy_ghost_1_modal" class="modal">
+        <span id="holy_ghost_1_close" class="close">&times;</span>
+        <img id="holy_ghost_1_modal_img" class="modal_content">
+        <div id="holy_ghost_1_caption" class="caption"></div>
+      </div>
+
+      <img id="holy_ghost_img_2" class="modal_hover_effect" src="images/holy_ghost_standard.png" alt="The Holy Ghost as Dove on a standard">
+
+      <div id="holy_ghost_2_modal" class="modal">
+        <span id="holy_ghost_2_close" class="close">&times;</span>
+        <img id="holy_ghost_2_modal_img" class="modal_content">
+        <div id="holy_ghost_2_caption" class="caption"></div>
+      </div>
+
       <h2>The Holy Ghost</h2>
       <p>The Holy Trinity consists of the Holy Father, the Holy Son, and the Holy Spirit. As one third of the Trinity, the Holy Spirit is represented in various ways throughout history. Here on the left we see an image of the Holy Spirit as child floating at sea and on the right an image of the Holy Spirit as a dove emblazoned on a standard.</p>
 
       <div class="clearfix"></div>
 
-      <img id="holy_ghost_img_3" src="images/holy_ghost_as_man.png" alt="The Holy Ghost as Man Holding  Crucifix">
+      <img id="holy_ghost_img_3" class="modal_hover_effect" src="images/holy_ghost_as_man.png" alt="The Holy Ghost as Man Holding  Crucifix">
+
+      <div id="holy_ghost_3_modal" class="modal">
+        <span id="holy_ghost_3_close" class="close">&times;</span>
+        <img id="holy_ghost_3_modal_img" class="modal_content">
+        <div id="holy_ghost_3_caption" class="caption"></div>
+      </div>
+
       <p>The Holy Spirit is here depicted on the right as a wizened old man who holds a crucifix in his hands. Note the dove resting above Christ's fallen head.</p>
     </div>
 
@@ -81,6 +109,106 @@
           menu[i].setAttribute("class", "active");
         }
       };
+    </script>
+
+    <script type="text/javascript">
+      // grab the modal
+      var modal = document.getElementById("seven_gifts_modal");
+
+      // get the image and insert it into the modal - use its alt text as caption
+      var img = document.getElementById("seven_gifts_img");
+      var modalImg = document.getElementById("seven_gifts_modal_img");
+      var captionText = document.getElementById("seven_gifts_caption");
+
+      img.onclick = function() {
+        modal.style.display = "block";
+        modalImg.style.margin = "auto";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      }
+
+      // get the span element that closes the modal
+      var span = document.getElementById("seven_gifts_close");
+
+      //when the user clicks on span x close the modal
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+    </script>
+
+    <script type="text/javascript">
+      // grab the modal
+      var modal = document.getElementById("holy_ghost_1_modal");
+
+      // get the image and insert it into the modal - use its alt text as caption
+      var img = document.getElementById("holy_ghost_img_1");
+      var modalImg = document.getElementById("holy_ghost_1_modal_img");
+      var captionText = document.getElementById("holy_ghost_1_caption");
+
+      img.onclick = function() {
+        modal.style.display = "block";
+        modalImg.style.margin = "auto";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      }
+
+      // get the span element that closes the modal
+      var span = document.getElementById("holy_ghost_1_close");
+
+      //when the user clicks on span x close the modal
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+    </script>
+
+    <script type="text/javascript">
+      // grab the modal
+      var modal = document.getElementById("holy_ghost_2_modal");
+
+      // get the image and insert it into the modal - use its alt text as caption
+      var img = document.getElementById("holy_ghost_img_2");
+      var modalImg = document.getElementById("holy_ghost_2_modal_img");
+      var captionText = document.getElementById("holy_ghost_2_caption");
+
+      img.onclick = function() {
+        modal.style.display = "block";
+        modalImg.style.margin = "auto";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      }
+
+      // get the span element that closes the modal
+      var span = document.getElementById("holy_ghost_2_close");
+
+      //when the user clicks on span x close the modal
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+    </script>
+
+    <script type="text/javascript">
+      // grab the modal
+      var modal = document.getElementById("holy_ghost_3_modal");
+
+      // get the image and insert it into the modal - use its alt text as caption
+      var img = document.getElementById("holy_ghost_img_3");
+      var modalImg = document.getElementById("holy_ghost_3_modal_img");
+      var captionText = document.getElementById("holy_ghost_3_caption");
+
+      img.onclick = function() {
+        modal.style.display = "block";
+        modalImg.style.margin = "auto";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      }
+
+      // get the span element that closes the modal
+      var span = document.getElementById("holy_ghost_3_close");
+
+      //when the user clicks on span x close the modal
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
     </script>
   </body>
 </html>

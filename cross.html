@@ -41,10 +41,38 @@
     <h1 class="h1_page">The Cross</h1>
 
     <div class="section">
-      <img id="cross_img_1" src="images/cross_with_four_gospels.png" alt="Cross with Four Gospels">
-      <img id="cross_img_2" src="images/cross_1.png" alt="Cross">
-      <img id="cross_img_3" src="images/cross_2.png" alt="Cross">
-      <img id="cross_img_4" src="images/cross_3.png" alt="Cross">
+      <img id="cross_img_1" class="modal_hover_effect" src="images/cross_with_four_gospels.png" alt="Cross with Four Gospels">
+
+      <div id="cross_1_modal" class="modal">
+        <span id="cross_1_close" class="close">&times;</span>
+        <img id="cross_1_modal_img" class="modal_content">
+        <div id="cross_1_caption" class="caption"></div>
+      </div>
+
+      <img id="cross_img_2" class="modal_hover_effect" src="images/cross_1.png" alt="Cross">
+
+      <div id="cross_2_modal" class="modal">
+        <span id="cross_2_close" class="close">&times;</span>
+        <img id="cross_2_modal_img" class="modal_content">
+        <div id="cross_2_caption" class="caption"></div>
+      </div>
+
+      <img id="cross_img_3" class="modal_hover_effect" src="images/cross_2.png" alt="Cross">
+
+      <div id="cross_3_modal" class="modal">
+        <span id="cross_3_close" class="close">&times;</span>
+        <img id="cross_3_modal_img" class="modal_content">
+        <div id="cross_3_caption" class="caption"></div>
+      </div>
+
+      <img id="cross_img_4" class="modal_hover_effect" src="images/cross_3.png" alt="Cross">
+
+      <div id="cross_4_modal" class="modal">
+        <span id="cross_4_close" class="close">&times;</span>
+        <img id="cross_4_modal_img" class="modal_content">
+        <div id="cross_4_caption" class="caption"></div>
+      </div>
+
       <h2>The Cross</h2>
       <p>Iconic and instantly recognizable the world over, the cross has seen countless depictions and representations. Here we see a balanced and equilateral cross featuring the four gospels in each quarter of the illustration.</p>
     </div>
@@ -63,5 +91,105 @@
         }
       };
     </script>
+
+    <script type="text/javascript">
+      // grab the modal
+      var modal = document.getElementById("cross_1_modal");
+
+      // get the image and insert it into the modal - use its alt text as caption
+      var img = document.getElementById("cross_img_1");
+      var modalImg = document.getElementById("cross_1_modal_img");
+      var captionText = document.getElementById("cross_1_caption");
+
+      img.onclick = function() {
+        modal.style.display = "block";
+        modalImg.style.margin = "auto";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      }
+
+      // get the span element that closes the modal
+      var span = document.getElementById("cross_1_close");
+
+      //when the user clicks on span x close the modal
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+    </script>
+
+    <script type="text/javascript">
+      // grab the modal
+      var modal = document.getElementById("cross_2_modal");
+
+      // get the image and insert it into the modal - use its alt text as caption
+      var img = document.getElementById("cross_img_2");
+      var modalImg = document.getElementById("cross_2_modal_img");
+      var captionText = document.getElementById("cross_2_caption");
+
+      img.onclick = function() {
+        modal.style.display = "block";
+        modalImg.style.margin = "auto";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      }
+
+      // get the span element that closes the modal
+      var span = document.getElementById("cross_2_close");
+
+      //when the user clicks on span x close the modal
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+    </script>
+
+  <script type="text/javascript">
+    // grab the modal
+    var modal = document.getElementById("cross_3_modal");
+
+    // get the image and insert it into the modal - use its alt text as caption
+    var img = document.getElementById("cross_img_3");
+    var modalImg = document.getElementById("cross_3_modal_img");
+    var captionText = document.getElementById("cross_3_caption");
+
+    img.onclick = function() {
+      modal.style.display = "block";
+      modalImg.style.margin = "auto";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+    }
+
+    // get the span element that closes the modal
+    var span = document.getElementById("cross_3_close");
+
+    //when the user clicks on span x close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+  </script>
+
+  <script type="text/javascript">
+    // grab the modal
+    var modal = document.getElementById("cross_4_modal");
+
+    // get the image and insert it into the modal - use its alt text as caption
+    var img = document.getElementById("cross_img_4");
+    var modalImg = document.getElementById("cross_4_modal_img");
+    var captionText = document.getElementById("cross_4_caption");
+
+    img.onclick = function() {
+      modal.style.display = "block";
+      modalImg.style.margin = "auto";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+    }
+
+    // get the span element that closes the modal
+    var span = document.getElementById("cross_4_close");
+
+    //when the user clicks on span x close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+  </script>
   </body>
 </html>

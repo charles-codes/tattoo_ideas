@@ -111,29 +111,29 @@
       }
     </script>
 
-<script type="text/javascript">
-  // grab the modal
-  var modal = document.getElementById("lamb_modal");
+    <script type="text/javascript">
+      // grab the modal
+      var modal = document.getElementById("lamb_modal");
 
-  // get the image and insert it into the modal - use its alt text as caption
-  var img = document.getElementById("lamb_img");
-  var modalImg = document.getElementById("lamb_modal_img");
-  var captionText = document.getElementById("lamb_caption");
+      // get the image and insert it into the modal - use its alt text as caption
+      var img = document.getElementById("lamb_img");
+      var modalImg = document.getElementById("lamb_modal_img");
+      var captionText = document.getElementById("lamb_caption");
 
-  img.onclick = function() {
-    modal.style.display = "block";
-    modalImg.style.margin = "auto";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-  }
+      img.onclick = function() {
+        modal.style.display = "block";
+        modalImg.style.margin = "auto";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      }
 
-  // get the span element that closes the modal
-  var span = document.getElementById("lamb_close");
+      // get the span element that closes the modal
+      var span = document.getElementById("lamb_close");
 
-  //when the user clicks on span x close the modal
-  span.onclick = function() {
-    modal.style.display = "none";
-  }
-</script>
+      //when the user clicks on span x close the modal
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+    </script>
   </body>
 </html>

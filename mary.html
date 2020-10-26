@@ -41,9 +41,30 @@
     <h1 class="h1_page">MARY THE MOTHER OF GOD</h1>
 
     <div class="section">
-      <img id="mary_img_1" src="images/mary_jesus_in_aureole.png" alt="Mary and Jesus in Aureole">
-      <img id="mary_img_2" src="images/mary_jesus_seven_gifts.png" alt="Mary and Jesus surround by seven doves">
-      <img id="mary_img_3" src="images/mary_nimbus_jesus_aureole.png" alt="Mary with a nimbus and Jesus in Aureole">
+      <img id="mary_img_1" class="modal_hover_effect" src="images/mary_jesus_in_aureole.png" alt="Mary and Jesus in Aureole">
+
+      <div id="mary_1_modal" class="modal">
+        <span id="mary_1_close" class="close">&times;</span>
+        <img id="mary_1_modal_img" class="modal_content">
+        <div id="mary_1_caption" class="caption"></div>
+      </div>
+
+      <img id="mary_img_2" class="modal_hover_effect" src="images/mary_jesus_seven_gifts.png" alt="Mary and Jesus surround by seven doves">
+
+      <div id="mary_2_modal" class="modal">
+        <span id="mary_2_close" class="close">&times;</span>
+        <img id="mary_2_modal_img" class="modal_content">
+        <div id="mary_2_caption" class="caption"></div>
+      </div>
+
+      <img id="mary_img_3" class="modal_hover_effect" src="images/mary_nimbus_jesus_aureole.png" alt="Mary with a nimbus and Jesus in Aureole">
+
+      <div id="mary_3_modal" class="modal">
+        <span id="mary_3_close" class="close">&times;</span>
+        <img id="mary_3_modal_img" class="modal_content">
+        <div id="mary_3_caption" class="caption"></div>
+      </div>
+
       <h2>Mother Mary</h2>
       <p>The Virgin Mary, the Mother of God, is one of the most highly revered figures in Christianity. She is also one of the most broadly depicted throughout Christendom. Here we see several depictions which include nimbus', aureoloes, and seven doves representing the seven gifts of the Holy Spirit.</p>
     </div>
@@ -62,5 +83,81 @@
         }
       };
     </script>
+
+    <script type="text/javascript">
+      // grab the modal
+      var modal = document.getElementById("mary_1_modal");
+
+      // get the image and insert it into the modal - use its alt text as caption
+      var img = document.getElementById("mary_img_1");
+      var modalImg = document.getElementById("mary_1_modal_img");
+      var captionText = document.getElementById("mary_1_caption");
+
+      img.onclick = function() {
+        modal.style.display = "block";
+        modalImg.style.margin = "auto";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      }
+
+      // get the span element that closes the modal
+      var span = document.getElementById("mary_1_close");
+
+      //when the user clicks on span x close the modal
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+    </script>
+
+    <script type="text/javascript">
+      // grab the modal
+      var modal = document.getElementById("mary_2_modal");
+
+      // get the image and insert it into the modal - use its alt text as caption
+      var img = document.getElementById("mary_img_2");
+      var modalImg = document.getElementById("mary_2_modal_img");
+      var captionText = document.getElementById("mary_2_caption");
+
+      img.onclick = function() {
+        modal.style.display = "block";
+        modalImg.style.margin = "auto";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      }
+
+      // get the span element that closes the modal
+      var span = document.getElementById("mary_2_close");
+
+      //when the user clicks on span x close the modal
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+    </script>
+
+    <script type="text/javascript">
+      // grab the modal
+      var modal = document.getElementById("mary_3_modal");
+
+      // get the image and insert it into the modal - use its alt text as caption
+      var img = document.getElementById("mary_img_3");
+      var modalImg = document.getElementById("mary_3_modal_img");
+      var captionText = document.getElementById("mary_3_caption");
+
+      img.onclick = function() {
+        modal.style.display = "block";
+        modalImg.style.margin = "auto";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      }
+
+      // get the span element that closes the modal
+      var span = document.getElementById("mary_3_close");
+
+      //when the user clicks on span x close the modal
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+    </script>
+
   </body>
 </html>
