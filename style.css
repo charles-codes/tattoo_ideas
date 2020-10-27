@@ -284,7 +284,7 @@ li a:hover {
 
 /* styling for all <img> on MARY page */
 #mary_img_1 {
-  float: left;
+  float: right;
 }
 
 #mary_img_2 {
@@ -292,7 +292,7 @@ li a:hover {
 }
 
 #mary_img_3 {
-  float: left;
+  float: right;
 }
 
 /* styling for all <img> on CROSS page */
