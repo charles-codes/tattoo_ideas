@@ -8,6 +8,7 @@ body {
   background-color: #ece9e9;
 }
 
+/* styling for HEADER */
 #header_homepage {
   height: 450px;
 }
@@ -23,11 +24,13 @@ header {
 header p {
   padding-left: 55px;
   font-size: 32px;
+  font-family: 'Raleway', sans-serif;
   width: 500px;
   text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
   text-align: center;
 }
 
+/* styling for <h1> tags */
 h1 {
   padding-left: 100px;
   font-size: 64px;
@@ -41,6 +44,7 @@ h1 {
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
+/* styling for NAVBAR and all links listed within */
 nav {
   position: sticky;
   top: 0;
@@ -85,6 +89,7 @@ li a:hover {
   margin: 20px;
 }
 
+/* styling for all <div> with the class of SECTION, includes <p>, <img>, and <a> links within */
 .section h2 {
   text-align: center;
   font-size: 32px;
@@ -113,6 +118,16 @@ li a:hover {
   color: rgb(153, 33, 33);
 }
 
+/* CLEARFIX hack style to remove float style between <div> sections */
+.clearfix:after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+/* styling for all IMAGES */
+
+/* style for all <img> on SAINTS page */
 #denis_img_1 {
   float: left;
   width: 393px;
@@ -125,18 +140,6 @@ li a:hover {
   height: 333.33333px;
 }
 
-.clearfix:after {
-  display: table;
-  content: "";
-  clear: both;
-}
-
-#crane_img {
-  float: left;
-  width: 232.5px;
-  height: 285px;
-}
-
 #greg_I_img {
   float: right;
 }
@@ -145,38 +148,6 @@ li a:hover {
   float: left;
   width: 420px;
   height: 501px;
-}
-
-#holy_ghost_img_1 {
-  float: left;
-  width: 503px;
-  height: 548px;
-}
-
-#holy_ghost_img_2 {
-  float: right;
-  width: 236px;
-  height: 551px;
-}
-
-#holy_ghost_img_3 {
-  float: right;
-}
-
-#passion_img {
-  float: left;
-  width: 473px;
-  height: 509px;
-}
-
-#christ_img {
-  float: right;
-  width: 512px;
-  height: 423px;
-}
-
-#christ_img_2 {
-  float: left;
 }
 
 #john_img {
@@ -189,57 +160,11 @@ li a:hover {
   float: right;
 }
 
-#oil_vendor_img {
-  float: left;
-  width: 426px;
-  height: 468px;
-}
-
 #john_the_baptist_img {
   float: left;
 }
 
 #john_the_baptist_img_2 {
-  float: right;
-}
-
-#lamb_img {
-  float: left;
-}
-
-#mary_img_1 {
-  float: left;
-}
-
-#mary_img_2 {
-  float: right;
-}
-
-#mary_img_3 {
-  float: left;
-}
-
-#cross_img_1 {
-  float: left;
-}
-
-#cross_img_2 {
-  float: left;
-}
-
-#cross_img_3 {
-  float: right;
-}
-
-#cross_img_4 {
-  float: right;
-}
-
-#seven_gifts_img {
-  float: left;
-}
-
-#stigmata_img {
   float: right;
 }
 
@@ -285,6 +210,66 @@ li a:hover {
   height: 365px;
 }
 
+/* styling for all <img> on ANIMALS page */
+#crane_img {
+  float: left;
+  width: 232.5px;
+  height: 285px;
+}
+
+#lamb_img {
+  float: right;
+}
+
+/* styling for all <img> on TRINITY page */
+#holy_ghost_img_1 {
+  float: left;
+  width: 503px;
+  height: 548px;
+}
+
+#holy_ghost_img_2 {
+  float: right;
+  width: 236px;
+  height: 551px;
+}
+
+#holy_ghost_img_3 {
+  float: right;
+}
+
+#seven_gifts_img {
+  float: left;
+}
+
+/* styling for all <img> on CHRIST page */
+#passion_img {
+  float: left;
+  width: 473px;
+  height: 509px;
+}
+
+#christ_img {
+  float: right;
+  width: 512px;
+  height: 423px;
+}
+
+#christ_img_2 {
+  float: left;
+}
+
+/* styling for all <img> on OTHER page */
+#oil_vendor_img {
+  float: left;
+  width: 426px;
+  height: 468px;
+}
+
+#stigmata_img {
+  float: right;
+}
+
 #veil_img_1 {
   float: left;
   width: 407px;
@@ -297,6 +282,37 @@ li a:hover {
   height: 550px;
 }
 
+/* styling for all <img> on MARY page */
+#mary_img_1 {
+  float: left;
+}
+
+#mary_img_2 {
+  float: right;
+}
+
+#mary_img_3 {
+  float: left;
+}
+
+/* styling for all <img> on CROSS page */
+#cross_img_1 {
+  float: left;
+}
+
+#cross_img_2 {
+  float: left;
+}
+
+#cross_img_3 {
+  float: right;
+}
+
+#cross_img_4 {
+  float: right;
+}
+
+/* styling for FOOTER */
 footer {
   position: relative;
   bottom: 0;
@@ -314,7 +330,7 @@ footer p {
   font-size: 20px;
 }
 
-/* css for gallery.html which will use flexbox */
+/* css for GALLERY which uses flexbox */
 
 .container {
   display: flex;
@@ -332,7 +348,7 @@ footer p {
   box-shadow: 3px 3px 3px #696969;
 }
 
-/* css for image modals */
+/* css for IMAGE MODALS */
 
 .modal_hover_effect {
   border-radius: 5px;
