@@ -361,6 +361,7 @@ footer p {
 
 .modal_hover_effect:hover {
   opacity: 0.7;
+  cursor: zoom-in;
 }
 
 /* the modal background */
