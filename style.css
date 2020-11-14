@@ -352,6 +352,10 @@ footer p {
   box-shadow: 3px 3px 3px #696969;
 }
 
+.container img:hover {
+  opacity: 60%;
+}
+
 /* css for IMAGE MODALS */
 
 .modal_hover_effect {
