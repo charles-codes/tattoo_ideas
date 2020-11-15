@@ -27,15 +27,16 @@ header p {
   font-family: 'Raleway', sans-serif;
   width: 500px;
   text-shadow: -.5px 0 rgb(153, 33, 33), 0 .5px rgb(153, 33, 33), .5px 0 rgb(153, 33, 33), 0 -.5px rgb(153, 33, 33);
-  text-align: center;
+  text-align: left;
 }
 
 /* styling for <h1> tags */
 h1 {
-  padding-left: 100px;
+  padding-left: 50px;
   font-size: 64px;
   color: rgb(153, 33, 33);
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  text-align: left;
 }
 
 .h1_page {
